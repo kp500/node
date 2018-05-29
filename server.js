@@ -56,6 +56,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Portfolio Page'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorCode: 3232,
